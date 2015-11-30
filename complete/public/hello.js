@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$("#submit").click(function() {
 		var name = $('#text').val();
 	    $.ajax({
-	        url: "http://localhost:9000/greeting/?name=" + name
+	        url: "http://api-lb-2069955939.us-east-1.elb.amazonaws.com/greeting/?name=" + name
 	        
 	    }).then(function(data) {
 	        
