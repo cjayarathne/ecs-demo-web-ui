@@ -10,5 +10,8 @@ ENV SPRING_HOME /data/spring-1.1.4.RELEASE
 
 ENV PATH $SPRING_HOME/bin:$PATH
 
+# Pull project
+RUN git clone https://github.com/cjayarathne/ecs-demo-web-ui.git
+
 EXPOSE 8080
 CMD ["spring", "run", "app.groovy"]
